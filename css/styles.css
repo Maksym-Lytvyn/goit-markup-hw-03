@@ -15,6 +15,12 @@ body {
     color: var(--primary-brand);
     
 }
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .header-class {
     display: flex;
     flex-direction: row;
@@ -34,13 +40,24 @@ body {
     color: var(--primary-brand);
     display: flex;
     align-items: center;
-    padding-left: 9.75rem;
+    padding-left: 78px;
+    padding-right: 44px;
 }
 .studio {
     color: var(--dark);
     display: flex;
     align-items: center;
-    margin-right: 4.8125rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-right: 33px;
 }
 
 /* очистка переліків від позначок */
@@ -63,7 +80,7 @@ body {
     font-weight: 500;
     text-decoration: none;
     display: flex;
-    margin-right: 2.5rem;
+    margin-right: 40px;
 }
 .nav-links:hover {
     color: #404BBF;
@@ -80,8 +97,8 @@ body {
     text-decoration: none;
     display: flex;
     flex-direction: row;
-    padding-left: 18.1875rem;
-    padding-left: 9.75rem;
+    padding-left: 291px;
+    padding-left: 156px;
 }
 .contact:hover {
     color: var(--primary-brand);
@@ -92,7 +109,7 @@ body {
 .contact-links {
     text-decoration: none;
     color: var(--text);
-    margin-right: 2.5rem;
+    margin-right: 40px;
 }
 
 .main-title {
@@ -102,7 +119,8 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    padding: 16.5rem 29.625rem 18.1875rem 29.625rem;
+    padding-top: 192px;
+    padding-bottom: 291px;
     /* додав фоновий колір. щоб текст було видно */
     background-color: #2E2F42;
 }
@@ -111,7 +129,6 @@ body {
     font-size: 16px;
     font-family: 'Roboto';
     line-height: 1.18;
-    position: absolute;
     width: 170px;
     left: 635px;
     top: 432px;
@@ -159,7 +176,6 @@ body {
     background-blend-mode: soft-light, normal;
     border: 1px solid var(--accent);
     display: flex;
-    margin-left: 9.75rem;
 }
 .pics2 {
     box-sizing: border-box;
@@ -167,7 +183,7 @@ body {
     background-blend-mode: soft-light, normal;
     border: 1px solid var(--accent);
     display: flex;
-    margin-left: 1.5rem;
+    margin-left: 24px;
 }
 .pics3 {
     box-sizing: border-box;
@@ -175,36 +191,39 @@ body {
     background-blend-mode: soft-light, normal;
     border: 1px solid var(--accent);
     display: flex;
-    margin-left: 1.5rem;
+    margin-left: 24px;
 }
 .team-bckg {
     background-color: var(--light);
-    margin-top: 7.5rem;
+    margin-top: 120px;
 }
 .team {
     text-align: center;
-    padding-top: 7.5rem;
-    padding-bottom: 4.5rem;
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 .worker-card1 {
-    padding-left: 9.75rem;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    margin-bottom: 120px;
 }
 .worker-card2 {
-    margin-left: 1.5rem;
+    margin-left: 24px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    margin-bottom: 120px;
 }
 .worker-card3 {
-    margin-left: 1.5rem;
+    margin-left: 24px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    margin-bottom: 120px;
 }
 .worker-card4 {
-    padding-right: 1.5rem;
+    padding-right: 24px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    margin-bottom: 120px;
 }
 .names {
     font-weight: 500;
@@ -231,7 +250,7 @@ body {
     font-size: 18px;
     line-height: 1.16;
     letter-spacing: 0.03em;
-    padding-top: 6.25rem;
+    padding-top: 100px;
     display: flex;
     text-transform: uppercase;
     text-decoration: none;
@@ -241,8 +260,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-left: 9.75rem;
-    padding-bottom: 6.25rem;
+    padding-bottom: 100px;
     color: var(--accent);
 }
 
@@ -256,14 +274,15 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    margin-left: 1.5rem;
-    padding: 8px 16px;
-    width: 69px;
+    margin-left: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
     color: #4D5AE5;
     cursor: pointer;
 }
 .total-display-btn {
-    margin-left: 26.6875rem;
     width: 69px;
     padding: 8px 16px;
     background: var(--primary-brand);
@@ -274,6 +293,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    margin-left: 213.5px;
     color: #FFFFFF;
     cursor: pointer;
 }
