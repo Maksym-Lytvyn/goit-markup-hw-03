@@ -31,6 +31,8 @@ h3,
 h4,
 h5,
 h6,
+ul,
+li,
 p {
 	margin: 0;
 }
@@ -62,6 +64,8 @@ img {
 .header-class {
     display: flex;
     flex-direction: row;
+    padding-top: 24px;
+    padding-bottom: 24px;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -86,7 +90,7 @@ img {
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
-    line-height: 24px;
+    padding-bottom: 24px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -98,9 +102,10 @@ img {
 /* очистка переліків від позначок */
 .no-bullets {
     list-style-type:none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    padding-left: 156px;
-    padding-right: 156px;
+    gap: 24px;
 }
 
 .nav-links {
@@ -111,13 +116,14 @@ img {
     color: var(--dark);
     list-style-type: none;
     display: flex;
+    margin: 0;
 }
 .exact-nav-links {
     color: var(--dark);
     font-weight: 500;
     text-decoration: none;
     display: flex;
-    margin-right: 40px;
+    margin: 0;
 }
 .nav-links:hover {
     color: #404BBF;
@@ -152,6 +158,7 @@ img {
     font-weight: 500;
     font-size: 56px;
     width: 492px;
+    margin: 0 auto;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
@@ -161,6 +168,7 @@ img {
     padding-top: 192px;
     padding-bottom: 291px;
     background-color: #2E2F42;
+    text-align: center;
 }
 .btn {
     font-weight: 500;
@@ -173,6 +181,7 @@ img {
     top: 432px;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    margin-top: 72px;
     background-color: var(--primary-brand);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -193,6 +202,8 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark);
+    margin: 0;
+    padding: 0;
 }
 .bene-section {
     padding-top: 120px;
@@ -204,6 +215,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin: 0;
     color: var(--text);
 }
 .section-doing {
@@ -226,6 +238,7 @@ img {
     background-blend-mode: soft-light, normal;
     border: 1px solid var(--accent);
     display: flex;
+    box-sizing: border-box;
 }
 .pics2 {
     box-sizing: border-box;
@@ -233,7 +246,7 @@ img {
     background-blend-mode: soft-light, normal;
     border: 1px solid var(--accent);
     display: flex;
-    margin-left: 24px;
+    box-sizing: border-box;
 }
 .pics3 {
     box-sizing: border-box;
@@ -241,7 +254,7 @@ img {
     background-blend-mode: soft-light, normal;
     border: 1px solid var(--accent);
     display: flex;
-    margin-left: 24px;
+    box-sizing: border-box;
 }
 .team-bckg {
     background-color: var(--light);
@@ -251,23 +264,31 @@ img {
 .team {
     text-align: center;
     margin-bottom: 72px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
 }
 .worker-card1 {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    margin: 0;
+    padding: 0;
 }
 .worker-card2 {
-    margin-left: 24px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
 .worker-card3 {
-    margin-left: 24px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
 .worker-card4 {
-    padding-right: 24px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
@@ -294,7 +315,8 @@ img {
     background-color: var(--text);
     display: block;
     padding-top: 100px;
-    padding-bottom: 100px; 
+    padding-bottom: 100px;
+    padding-left: 0; 
 }
 .studio-footer {
     font-family: 'Raleway';
@@ -303,6 +325,7 @@ img {
     line-height: 1.16;
     letter-spacing: 0.03em;
     display: flex;
+    align-items: center;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--light);
@@ -310,6 +333,7 @@ img {
 .footer-description {
     font-size: 16px;
     padding-top: 16px;
+    
     width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;
