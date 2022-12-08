@@ -64,9 +64,12 @@ img {
 .header-class {
     display: flex;
     flex-direction: row;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.main-nav {
+    display: flex;
 }
 
 .web {
@@ -90,6 +93,7 @@ img {
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
+    line-height: 1.3;
     padding-bottom: 24px;
     text-decoration: none;
     display: flex;
@@ -116,20 +120,23 @@ img {
     color: var(--dark);
     list-style-type: none;
     display: flex;
-    margin: 0;
 }
 .exact-nav-links {
     color: var(--dark);
     font-weight: 500;
     text-decoration: none;
     display: flex;
-    margin: 0;
+    margin-right: 40px;
 }
 .nav-links:hover {
     color: #404BBF;
 }
 .nav-links:focus {
     color: #404BBF;
+}
+.nav-segment {
+    margin-right: 291px;
+    margin-left: 77px;
 }
 .contact {
     font-size: 16px;
@@ -202,20 +209,18 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark);
-    margin: 0;
-    padding: 0;
 }
 .bene-section {
     padding-top: 120px;
 }
 .benefit-point {
     width: 264px;
+    flex-basis: calc((100% - 72px) / 4);
 }
 .description {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin: 0;
     color: var(--text);
 }
 .section-doing {
@@ -277,8 +282,6 @@ img {
 .worker-card1 {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-    margin: 0;
-    padding: 0;
 }
 .worker-card2 {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -315,8 +318,7 @@ img {
     background-color: var(--text);
     display: block;
     padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 0; 
+    padding-bottom: 100px; 
 }
 .studio-footer {
     font-family: 'Raleway';
@@ -341,6 +343,13 @@ img {
 }
 
 /* Portfolio part */
+.merch-section {
+    margin-top: 96px;
+    margin-bottom: 120px;
+}
+.filter-btns {
+    margin-bottom: 72px;
+}
 .display-btn {
     background: var(--light);
     border: 1px solid var(--accent);
@@ -350,7 +359,6 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    margin-left: 24px;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 16px;
@@ -369,7 +377,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    margin-left: 213.5px;
+    margin: 0 auto;
     color: #FFFFFF;
     cursor: pointer;
 }
@@ -384,17 +392,24 @@ img {
 }
 .merch-rows {
     flex-basis: calc((100% - 48px) / 3);
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .project-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 32px;
+    margin-left: 16px;
     color: var(--dark);
 }
 .categories {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-bottom: 32px;
     color: var(--text);
 }
